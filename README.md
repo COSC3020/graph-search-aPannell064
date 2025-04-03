@@ -26,6 +26,13 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+On each call of the dfSearch function, all of the edges of the startNode will be 
+added to the toCheck array and then processed. Only edges that go to verticies 
+that haven't been visited yet will be passed into a new recursive call. As a result, 
+each accessible vertex will be processed once and each edge will be processed once. 
+In the worst case, the whole graoh will be traversed. Therefore the asymptotic complexity
+is $/Theta(|V| + |E|)$. 
+
 ## Bonus
 
 Implement and analyze breadth-first search.
